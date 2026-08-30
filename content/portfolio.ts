@@ -257,7 +257,7 @@ export const projects: Project[] = [
     tech: ["Python", "scikit-learn", "NLP", "Colab"],
     date: "2025",
     sticker: "spark",
-    links: [{ label: "GitHub", href: "https://github.com/sravanyadav-19/redrob-intelligent-candidate-ranking" }],
+    links: [{ label: "GitHub Repo", href: "https://github.com/sravanyadav-19/redrob-intelligent-candidate-ranking" }],
   },
   {
     slug: "tutor-space",
@@ -269,7 +269,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "React", "Node.js", "MongoDB"],
     date: "2025",
     sticker: "code",
-    links: [{ label: "GitHub", href: "https://tutorspace-lms.vercel.app/" }], // add Live url when you have it
+    links: [{ label: "Live Link", href: "https://tutorspace-lms.vercel.app/" }], // add Live url when you have it
   },
   {
     slug: "inovitaz",
@@ -281,7 +281,7 @@ export const projects: Project[] = [
     tech: ["React", "Next.js", "Tailwind", "Framer Motion"],
     date: "2025",
     sticker: "camera",
-    links: [{ label: "GitHub", href: "https://inovitaz.vercel.app/" }], // add Live url when you have it
+    links: [{ label: "Live Link", href: "https://inovitaz.vercel.app/" }], // add Live url when you have it
   },
   {
     slug: "student-management",
@@ -293,7 +293,7 @@ export const projects: Project[] = [
     tech: ["JavaScript", "Node.js", "Express", "MongoDB"],
     date: "2024",
     sticker: "keyboard",
-    links: [{ label: "Code", href: "https://studentmanagementsystem-vitap.vercel.app/" }],
+    links: [{ label: "Live Link", href: "https://studentmanagementsystem-vitap.vercel.app/" }],
   },
 ];
 
