@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { about, sections } from "@/content/portfolio";
+import { asset } from "@/lib/paths";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -144,7 +145,7 @@ export default function About() {
               >
                 <span className="tape" />
                 <Image
-                  src="/images/mascot/portrait.webp"
+                  src={asset("/images/mascot/portrait.webp")}
                   alt="Illustrated portrait of Sravan"
                   width={1024}
                   height={1536}
@@ -161,7 +162,7 @@ export default function About() {
 
               {/* code sticker slapped on the corner of the polaroid */}
               <motion.img
-                src="/images/stickers/code.webp"
+                src={asset("/images/stickers/code.webp")}
                 alt="Code sticker"
                 draggable={false}
                 initial={{ opacity: 0, scale: 0.4, rotate: -24 }}

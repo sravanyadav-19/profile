@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { StickerSpec } from "@/content/portfolio";
 import { useCaps } from "@/lib/useCaps";
+import { asset } from "@/lib/paths";
 
 interface StickerProps {
   spec: StickerSpec;
@@ -69,7 +70,7 @@ export default function Sticker({ spec, delay = 0 }: StickerProps) {
           : { delay, type: "spring", stiffness: 88, damping: 15, mass: 1.05 }
       }
     >
-      <img src={spec.src} alt={spec.alt} draggable={false} />
+      <img src={asset(spec.src)} alt={spec.alt} draggable={false} />
     </motion.div>
   );
 }

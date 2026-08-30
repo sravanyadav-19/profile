@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { projects, sections, type Project } from "@/content/portfolio";
+import { asset } from "@/lib/paths";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -32,7 +33,7 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
   // try the live website screenshot (.webp → .png → .jpg); if none exists yet,
   // shotOk becomes false and we fall back to the project's sticker.
   const candidates = ["webp", "png", "jpg"].map(
-    (ext) => `/images/projects/${p.slug}.${ext}`
+    (ext) => asset(`/images/projects/${p.slug}.${ext}`)
   );
   const [tryIdx, setTryIdx] = useState(0);
   const shotOk = tryIdx < candidates.length;
@@ -64,7 +65,7 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`/images/stickers/${p.sticker}.webp`}
+              src={asset(`/images/stickers/${p.sticker}.webp`)}
               alt=""
               draggable={false}
               style={{ width: "58%", height: "58%", objectFit: "contain" }}
